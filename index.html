@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Latest compiled and minified CSS Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!--Open Sans Font style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="portfolio_styles.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-fixed-top">
+     <div class="container-fluid">
+       <div class="navbar-header">
+         <button style="border-color:#f39322;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <div class="row navbar-brand">
+          <span id="p_title" class="col-xs-3"><img height="50px;" style="margin-top: -10px;" src="images/me.gif"></span>
+          <img style="width:100px; margin-top: -7px;" class="col-xs-8 col-xs-offset-1" src="images/portfolio_logo.png">
+        </div>
+      </div>
+      <div style="background-color: #21252b;" class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right" id="nav_links">
+          <li><button id="top_btn" class="btn" onclick="window.scroll({ top: 0, left: 0, behavior: 'smooth' }); this.blur();">Top</button></li>
+          <li><button id="nav_projects_btn" class="btn" onclick="btnPress(event); this.blur();">Projects</button></li>
+          <li><button id="nav_resume_btn" class="btn" onclick="btnPress(event); this.blur();">Resume</button></li>
+          <li><button id="nav_about_btn" class="btn" onclick="btnPress(event); this.blur();">About Me</button></li>
+          <li><button id="nav_contact_btn" class="btn" onclick="btnPress(event); this.blur();">Contact</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container">
+    <div id="bio_div" class="col-sm-5 col-xs-12">
+      <h2 id="short_bio">
+        Hi. I'm Chris. I'm a web developer. I'm also a constant
+        learner, a movie lover, a video game player, and a weight lifter.
+        I'm happy that you stopped by.
+      </h2>
+    </div>
+  </div>
+  </header>
+
+
+  <div id="container">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3" id="dashboard">
+        <ul class="text-center" id="div1_links_list">
+          <li><button id="projects_btn" class="btn" onclick="btnPress(event);">Projects</button></li>
+          <li><button id="resume_btn" class="btn" onclick="btnPress(event);">Resume</button></li>
+          <li><button id="about_btn" class="btn" onclick="btnPress(event);">About Me</button></li>
+          <li><button id="contact_btn" class="btn" onclick="btnPress(event);">Contact</button></li>
+        </ul>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 other_div_trans" id="projects_div">
+        <ul class="text-center" id="div1_links_list">
+          <h1>Projects</h1>
+          <li><button id="cinemartyrs_btn" class="btn" onclick="btnPress(event);">Cinemartyrs</button></li>
+          <li><button id="portfolio_btn" class="btn" onclick="btnPress(event);">My Portfolio</button></li>
+          <li><button id="budget_calculator_btn" class="btn" onclick="btnPress(event)">Budget Calculator</button></li>
+          <li><button id="pig_game_btn" class="btn" onclick="btnPress(event)">Pig Game</button></li>
+        </ul>
+        <button id="projects_back" class="btn back_button" onclick="btnPress(event);"><< back</button>
+      </div>
+
+      <div class="col-sm-8 col-xs-12 col-sm-offset-2 other_div_trans" id="resume_div">
+        <embed src="files/Resume_2.pdf" type="application/pdf" width="100%" height="600px" />
+        <button id="resume_back" class="btn back_button" onclick="btnPress(event);"><< back</button>
+      </div>
+
+      <div class="col-sm-8 col-xs-12 col-sm-offset-2 other_div_trans" id="about_div">
+        <div class="col-md-8 col-xs-12">
+          <h1 class="title">A Little About Me</h1>
+          <p class="div_paragraph">Hey there. I'm Chris Hilliard. After I graduated
+                                  from college with a Bachelor of Computer Science in
+                                  May 2017, I wasn't immediately sure of which direction
+                                  to take. I enjoyed web development, but I had minimal exposure
+                                  to web technologies in college. Regardless, I decided to start focusing
+                                  more on web development and started by creating a website called Cinemartyrs.com
+                                  for myself and a friend of mine. Ever since then, I've been focused on constantly
+                                  learning about new technologies and improving my skills. My goal is to
+                                  create anything that I imagine.<br><br>
+                                  When I'm not focusing on web development, I am probably watching a movie,
+                                  playing a game, listening to a podcast, hitting the gym, or making content for Cinemartyrs.
+
+                                <br><br>
+                                Then go into technologies that I am familiar with.. which are<br>
+                                  -html
+                                  -css
+                                  -bootstrap
+                                  -procedural PHP
+                                  -JavaScript
+                                  -SQL
+          </p>
+        </div>
+        <div class="col-md-4 col-xs-12">
+          <img class="img-responsive" src="images/prof_pic_port.png">
+        </div>
+        <button id="about_back" class="btn back_button" onclick="btnPress(event);"><< back</button>
+      </div>
+
+      <div class="col-sm-8 col-xs-12 col-sm-offset-2 other_div_trans" id="contact_div">
+        <h1 class="title">Contact Info</h1>
+        <h3 style="color:white">Want to get in touch? Here are some links to contact me.</h3>
+        <h4 style="color:white">Here is my email address. chilliar0206@gmail.com</h4>
+        <h4 style="color:white">Here are some links to some social media and github</h4>
+        <div>
+          <ul id="contact_icons">
+            <a id="facebook" class="icon_link" href=""><i class="fab fa-facebook-square fa-7x"></i></a>
+            <a id="linkedin" class="icon_link" href=""><i class="fab fa-linkedin fa-7x"></i></a>
+            <a id="github" class="icon_link" href=""><i class="fab fa-github-square fa-7x"></i></a>
+          </ul>
+        </div>
+        <button id="contact_back" class="btn back_button" onclick="btnPress(event);"><< back</button>
+      </div>
+
+      <div class="col-sm-8 col-xs-12 col-sm-offset-2 other_div_trans" id="cinemartyrs_div">
+        <div class="col-md-6 col-xs-12">
+            <h1 class="title">Cinemartyrs.com</h1>
+            <div>
+              <p style="color:white">technologies used: HTML, CSS, Bootstrap, PHP, SQL, GIMP Photoshop</p>
+            </div>
+            <p class="div_paragraph">
+              Cinemartyrs.com is a PHP based movie blog. When I was designing it, I wanted
+              to give it a unique color scheme that took influence from classic Hollywood and
+              modern movie theaters. The website was built with Bootstrap to make sure it was responsive
+              to mobile screens. I also made the decision to create a CMS for the site to get a better
+              understanding of how content management systems work and how they can be manipulated. The
+              website is still a work in progress, with updates planned, but it is currently being hosted and content is being
+              added to it regularly.
+              <br><br>
+              If you would like to view the website, just click
+              right <a style="color:#f39322;" target="_blank" href="http://cinemartyrs.com">HERE</a>.
+            </p>
+
+
+        </div>
+        <div style="background-color: #21252b; border-radius: 5px;" class="col-md-6 col-md-offset-0 col-xs-8 col-xs-offset-2 project_pic container">
+          <img class="img-responsive" src="images/placeit.png">
+        </div>
+
+        <button id="cinematyrs_back" class="btn back_button" onclick="btnPress(event);"><< back</button>
+
+      </div>
+
+      <div class="col-sm-8 col-xs-12 col-sm-offset-2 other_div_trans" id="portfolio_div">
+        <div class="col-md-6 col-xs-12">
+            <h1 class="title">My Portfolio</h1>
+            <div>
+              <p style="color:white">technologies used: HTML, CSS, Bootstrap, Vanilla JavaScript</p>
+            </div>
+            <p class="div_paragraph">
+              When I set out to make this portfolio, I wanted to make a simple,
+              single page application where nearly everything was one click away.
+              I also wanted to avoid the long web page design that many portfolio
+              pages share, where it seems like the pages scroll for over 2000px.
+              By using custom Vanilla JavaScript functions and CSS transitions,
+              I was able to keep everything contained to one part of the page,
+              keeping the page short, simple, and easy to navigate. The simple color
+              scheme was chosen to reflect the color scheme of the text editor I use.
+              <br><br>
+        </div>
+        <div style="background-color: #21252b; border-radius: 5px;" class="col-md-6 col-md-offset-0 col-xs-8 col-xs-offset-2 project_pic container">
+          <img class="img-responsive" src="">
+        </div>
+
+        <button id="portfolio_back" class="btn back_button" onclick="btnPress(event);"><< back</button>
+
+      </div>
+
+      <div class="col-sm-8 col-xs-12 col-sm-offset-2 other_div_trans" id="budget_calculator_div">
+        <div class="col-md-6 col-xs-12">
+            <h1 class="title">Budget Calculator</h1>
+            <div>
+              <p style="color:white">technologies used: JavaScript</p>
+            </div>
+            <p class="div_paragraph">
+              This is a monthly budget calculator web application that I made while taking
+              a JavaScript course. The HTML and CSS were provided by the instructor.
+              The application allows users to input expected incomes and expenses for
+              one month and the application will produce a budget for that month.
+              I built the application with the instructor to familiarize myself with
+              Object Oriented Programming and design, manipulating the DOM, Initially
+              Involked Function Expressions, and closures.
+              <br><br>
+              The link to the code on my GitHub account can be found <a href="">HERE</a>.
+            </p>
+        </div>
+        <div style="background-color: #21252b; border-radius: 5px;" class="col-md-6 col-md-offset-0 col-xs-8 col-xs-offset-2 project_pic container">
+          <img class="img-responsive" src="images/budgety.png">
+        </div>
+        <button id="budget_calculator_back" class="btn back_button" onclick="btnPress(event);"><< back</button>
+      </div>
+
+      <div class="col-sm-8 col-xs-12 col-sm-offset-2 other_div_trans" id="pig_game_div">
+        <div class="col-md-6 col-xs-12">
+            <h1 class="title">Pig Game</h1>
+            <div>
+              <p style="color:white">technologies used: JavaScript</p>
+            </div>
+            <p class="div_paragraph">
+              This is an altered game of pig that I made while taking a JavaScript course.
+              The HTML and CSS were provided by the instructor. It is a web application
+              in which two players roll a pair of dice and play to a user specified score.
+              The purpose of building this application was to better familiarize myself with
+              DOM manipulation.
+              <br><br>
+              The link to the code on my GitHub account can be found <a href="">HERE</a>.
+            </p>
+        </div>
+        <div style="background-color: #21252b; border-radius: 5px;" class="col-md-6 col-md-offset-0 col-xs-8 col-xs-offset-2 project_pic container">
+          <img class="img-responsive" src="images/pig_game.png">
+        </div>
+        <button id="pig_game_back" class="btn back_button" onclick="btnPress(event);"><< back</button>
+      </div>
+
+  </div>
+
+  <div id="footer">
+    <h1 style="color:white">footer</h1>
+  </div>
+
+<script src="scripts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>

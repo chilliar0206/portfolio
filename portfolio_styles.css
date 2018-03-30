@@ -1,0 +1,258 @@
+body{
+  background: #282c34;
+  font-family: 'Open Sans', sans-serif;
+}
+
+header{
+  margin-top:-20px;
+  background:url("images/random.jpg");
+  background-size: cover;
+  height: 600px;
+  width:auto;
+  z-index: 1;
+}
+
+#navbar{
+  background: #21252b;
+  height: 60px;
+  border-radius: 0px;
+  border-bottom: 1px solid #f39322;
+  margin-bottom: 0px;
+}
+
+
+/* styles for each list element */
+#nav_links button{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  border-radius: 0px;
+  color: #f39322;
+  padding-top: 0px;
+  margin-right: 10px;
+  text-decoration: none;
+  position: relative;
+  background-color:inherit;
+}
+
+#container{
+  position:relative;
+  height: 650px;
+  margin-top: 0px;
+  padding-bottom: 20px;
+  padding-top: 0px;
+
+}
+
+#container::after {
+  content: "";
+  background-image: url("images/code_bckrnd.png");
+  background-size: cover;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* style for the short bio div */
+#bio_div{
+  z-index: 0;
+  margin-top: 100px;
+
+}
+
+/* style for the short bio text */
+#short_bio{
+  font-family: 'Open Sans', sans-serif;
+  color:white;
+  word-wrap: break-word;
+}
+
+/* style for the home page div (projects, resume, about, contact) */
+#dashboard{
+  position: absolute;
+  background-color: #363a42;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 1;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
+  transition-delay: 0s;
+  top:15px; left:0; bottom:0; right: 0;
+
+}
+
+#projects_div, #cinemartyrs_div, #resume_div, #about_div, #contact_div, #budget_calculator_div, #pig_game_div, #portfolio_div{
+  position: absolute;
+  background-color: #363a42;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 1;
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
+  transition-delay: 0s;
+  top:15px; left:0; bottom:0; right: 0;
+}
+
+
+/* class for the home div trnsition off screen when button is clicked */
+.dashboard_trans{
+  -webkit-transform: translateX(-1000px);
+  transform: translateX(-2000px);
+  opacity: 0;
+}
+
+.other_div_trans{
+  transform: translateY(-2000px);
+}
+
+.active_div{
+
+}
+
+/* style for the unordered list in the home div */
+#div1_links_list{
+  position: relative;
+  padding: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#div1_links_list button{
+  font-size: 30px;
+  font-weight: bold;
+}
+/* style for the individual buttons in the home div unordered list */
+
+button{
+  font-family: 'Open Sans', sans-serif;
+  color: #f39322;
+  background-color: inherit;
+  margin: 10px 0px 10px 0px;
+  padding: 5px 10px 5px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
+
+}
+
+/* background color transition for home div buttons */
+button:hover{
+  background-color: #f39322;
+  color: #282c34;
+}
+
+/* style for the h2 child elements of home div buttons */
+#div1_links_list h2{
+  margin: 10px 0px 10px 0px;
+  font-weight: bold;
+}
+
+#div1_links_list h1{
+  margin: 10px 0px 10px 0px;
+  font-weight: bold;
+  color: #f39322;
+  text-decoration: underline;
+}
+
+
+/* Ease-in-out underline animation for navbar buttons*/
+#nav_links button:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #f39322;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#nav_links button:hover:before{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#nav_links button:hover{
+  color: #f39322;
+}
+/* End of underline animation styling */
+
+#footer{
+  height: 200px;
+  width:auto;
+  background-color:#21252b;
+
+}
+
+#footer_transition{
+  height: 50px;
+  background-image: url("images/transition_color.png");
+  background-size: cover;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+@media only screen and (min-width: 992px){
+  .project_pic{
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+}
+
+.back_button{
+  position: absolute;
+  left:1%;
+  bottom: 1%;
+  font-size: 26px;
+}
+
+.navbar .navbar-toggle .icon-bar{
+  background-color: #f39322;
+}
+
+.title{
+  font-weight: bold;
+  text-decoration: underline;
+  color:white;
+}
+
+.icon_link{
+  color: #21252b;
+}
+
+#contact_icons a{
+  margin-right: 15px;
+  transition: all 0.3s ease-in-out 0s;
+
+}
+
+#facebook:hover{
+  color: #3b5998;
+}
+
+#linkedin:hover{
+  color:#0077B5;
+}
+
+#github:hover{
+  color: #c9510c;
+}
+
+.active_nav{
+  border-bottom: 2px solid #f39322;
+}
+
+.div_paragraph{
+  color:white;
+  line-height: 2.0em;
+}
